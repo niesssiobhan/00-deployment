@@ -1,42 +1,37 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name
+## 00-Deployment
 
-### Author: Student/Group Name
+### Author: Siobhan Niess
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com)
-* [front-end](http://xyz.com)
+[![Build Status](https://www.travis-ci.com/niesssiobhan/00-deployment.svg?branch=master)](https://www.travis-ci.com/niesssiobhan/00-deployment)
+
+* [repo](https://github.com/niesssiobhan/seattle-javascript-401d28/tree/master/00-deployment)
+* [travis](https://www.travis-ci.com/niesssiobhan/00-deployment)
+* [server](https://niess-00-lab.herokuapp.com/)
 
 ### Modules
-#### `modulename.js`
+#### `pol.js`
 ##### Exported Values and Methods
-
-###### `foo(thing) -> string`
-Usage Notes or examples
-
-###### `bar(array) -> array`
-Usage Notes or examples
+* `isAlive()`
+* Returns true or false
+  *false if the parameter is sent
 
 ### Setup
 #### `.env` requirements
-* `PORT` - Port Number
+* `PORT` - Defined in the ENV
 * `MONGODB_URI` - URL to the running mongo instance/db
 
 #### Running the app
 * `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+* Endpoint: `/`
+* Returns `true`
 
 #### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+* npm test (Runs unit tests)
+* npm run lint (Runs linter tests)
 
 #### UML
 Link to an image of the UML for your application and response to events
